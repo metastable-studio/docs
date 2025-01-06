@@ -1,0 +1,11 @@
+[
+  {
+    "text": "Guide",
+    "link": "/guide/getting-started/introduction",
+    "activeMatch": "/guide/"
+  },
+  {
+    "text": "Download",
+    "link": "https://metastable.studio/download"
+  }
+]
