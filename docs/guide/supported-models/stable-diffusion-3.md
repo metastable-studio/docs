@@ -27,15 +27,15 @@ Due to licensing restrictions, Metastable is unable to provide a fully automatic
       - SD 3.5 large - https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/sd3.5_large.safetensors
 
    2. Text encoders:
-      - https://huggingface.co/stabilityai/stable-diffusion-3-medium/blob/main/text_encoders/clip_l.safetensors
-      - https://huggingface.co/stabilityai/stable-diffusion-3-medium/blob/main/text_encoders/clip_g.safetensors
-      - https://huggingface.co/stabilityai/stable-diffusion-3-medium/blob/main/text_encoders/t5xxl_fp16.safetensors
+      - https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/text_encoders/clip_l.safetensors
+      - https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/text_encoders/clip_g.safetensors
+      - https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/text_encoders/t5xxl_fp16.safetensors
 
 7. Open Metastable.
 8. Go to "Settings", "About Metastable" and click on the "Reveal in explorer" button in the "Storage" section.
 9. In the newly opened file explorer window, open the "models" directory.
 10. Move your model file (sdX_X.safetensors) to the "checkpoint" directory.
-11. Move your text encoder files (clip_l.safetensors, clip_g.safetensors, t5xxl_fp16.safetensors) to the "clip" directory.
+11. Move your text encoder files (clip_l.safetensors, clip_g.safetensors, t5xxl_fp16.safetensors) to the "text_encoder" directory.
 
 ## Supported features
 

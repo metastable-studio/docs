@@ -5,6 +5,11 @@
     "activeMatch": "/guide/"
   },
   {
+    "text": "Development",
+    "link": "/development/getting-started/quickstart",
+    "activeMatch": "/development/"
+  },
+  {
     "text": "Download",
     "link": "https://metastable.studio/download"
   }
