@@ -2,7 +2,26 @@
 
 Stable Diffusion 3.x uses a split checkpoint (i.e. UNET/VAE/CLIP aren't contained in a single file), therefore it can only be used in the "Advanced" checkpoint mode.
 
-## Manual installation
+## Usage
+
+Following automatic installation, a "metacheckpoint" named "SD 3 Medium" (or similar depending on your choice) will be created. Simply using that option in "Simple" mode is enough.
+
+Following manual installation, models must be selected manually in the "Advanced" checkpoint mode as follows:
+
+![Configuration](./assets/sd3.png)
+
+## Installation
+
+### Automatic installation
+
+1. Set up a HuggingFace API key as described here: [Downloading gated models from HuggingFace](/guide/usage/model-management.html#huggingface).
+2. Go to the "Models" tab.
+3. Click on "Recommended".
+4. Click on "Stable Diffusion 3".
+5. Click on the "Download" next to the model you're interested in.
+6. After the download completes, a "metacheckpoint" called "SD 3 Medium" (or similar) will be created.
+
+### Manual installation
 
 Due to licensing restrictions, Metastable is unable to provide a fully automatic installation procedure for SD 3.x. The models can still be installed manually.
 
