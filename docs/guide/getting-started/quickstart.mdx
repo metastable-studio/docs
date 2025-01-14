@@ -10,23 +10,39 @@ import { Tab, Tabs, Steps } from "rspress/theme";
 
     **Supported GPUs:**
 
-    - NVIDIA - https://developer.nvidia.com/cuda-gpus
-    - AMD (via ZLUDA) - https://rocm.docs.amd.com/projects/install-on-windows/en/latest/reference/system-requirements.html
-    - AMD/Intel Arc (via DirectML) - any GPU supporting DirectX 12 or newer
+    - **NVIDIA**
+        - List of supported GPUs: https://developer.nvidia.com/cuda-gpus
+        - NVIDIA drivers must be installed: https://www.nvidia.com/en-us/drivers/
+    - **AMD** (via ZLUDA)
+        - List of supported GPUs: https://rocm.docs.amd.com/projects/install-on-windows/en/latest/reference/system-requirements.html
+        - AMD GPU drivers and HIP SDK 5.7 or 6.1 must be installed.
+        - Detailed installation instructions: [AMD GPUs on Windows via ZLUDA](./platform-specific-instructions.html#amd-gpus-on-windows-via-zluda)
+    - **AMD/Intel Arc** (via DirectML)
+        - Any GPU supporting DirectX 12 or newer is supported.
+        - DirectML will usually have lower performance than the other methods. It's not recommended to use the DirectML mode.
 
-    To use ZLUDA, please follow the instructions here: [AMD GPUs on Windows via ZLUDA](/guide/getting-started/platform-specific-instructions.html#amd-gpus-on-windows-via-zluda)
+    In case of no compatible GPUs being present, Metastable will run in a CPU-only mode.
 
   </Tab>
   <Tab label="macOS">
     macOS 10.9 or newer is required. Both Intel and Apple Silicon are supported.
+
+    External GPU support is not available.
+
   </Tab>
   <Tab label="Linux">
     glibc is required.
 
     **Supported GPUs:**
 
-    - NVIDIA (via CUDA) - https://developer.nvidia.com/cuda-gpus
-    - AMD (via ROCm) - https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html
+    - **NVIDIA** (via CUDA)
+        - List of supported GPUs: https://developer.nvidia.com/cuda-gpus
+        - Proprietary NVIDIA drivers must be installed. The `nvidia-smi` command must be present in your system and within PATH.
+    - **AMD** (via ROCm)
+        - List of supported GPUs: https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html
+        - AMD GPU drivers and ROCm HIP SDK must eb installed. The `rocm-smi` command must be present in your system and within PATH.
+
+    In case of no compatible GPUs being present, Metastable will run in a CPU-only mode.
 
   </Tab>
 </Tabs>
